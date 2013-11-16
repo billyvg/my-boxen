@@ -30,6 +30,7 @@ end
 # config. Required.
 
 github "boxen", "3.3.4"
+#github "boxen", "3.3.4", :repo => "billyvg/puppet-boxen"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -40,6 +41,7 @@ github "gcc",        "2.0.1"
 github "git",        "1.2.5"
 github "go",         "1.0.0"
 github "homebrew",   "1.5.1"
+#github "homebrew",   "1.5.1", :repo => "billyvg/puppet-homebrew"
 github "hub",        "1.0.3"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
@@ -53,5 +55,23 @@ github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
 
+github "java", 	     "1.1.0"
+
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "python", "1.1.1"
+github "dropbox", "1.1.2"
+github "chrome", "1.1.2"
+github "hipchat", "1.0.8"
+github "iterm2", "1.0.4"
+github "fish", "1.0.0"
+github "alfred", "1.1.6"
+github "vim", "1.0.5"
+github "macvim", "1.0.0"
+github "ctags", "1.0.0"
+
+github "droplr", "1.0.1"
+github "spotify", "1.0.1"
+github "onepassword", "1.0.2"
+github "vlc", "1.0.5"

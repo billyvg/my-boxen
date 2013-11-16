@@ -64,9 +64,6 @@ node default {
   }
 
   # node versions
-  include nodejs::v0_4
-  include nodejs::v0_6
-  include nodejs::v0_8
   include nodejs::v0_10
 
   # default ruby versions
@@ -74,6 +71,18 @@ node default {
   include ruby::1_9_2
   include ruby::1_9_3
   include ruby::2_0_0
+
+  include python
+  include java
+
+  include chrome
+  include dropbox
+  include alfred
+  include iterm2::dev
+  include hipchat
+  include macvim
+  include vim
+  include ctags
 
   # common, useful packages
   package {
