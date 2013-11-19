@@ -3,5 +3,6 @@ class people::billyvg {
 
   include people::billyvg::applications
   include people::billyvg::development
+  include people::billyvg::osxsettings
 
 }

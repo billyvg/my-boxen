@@ -61,15 +61,18 @@ github "java", 	     "1.1.0"
 # https://github.com/boxen.
 
 github "python", "1.1.1"
+
 github "dropbox", "1.1.2"
 github "chrome", "1.1.2"
 github "hipchat", "1.0.8"
 github "iterm2", "1.0.4"
-github "fish", "1.0.0"
 github "alfred", "1.1.6"
-github "vim", "1.0.5"
 github "macvim", "1.0.0"
+
+github "fish", "1.0.0"
+github "vim", "1.0.5"
 github "ctags", "1.0.0"
+github "osx", "2.0.0"
 
 github "droplr", "1.0.1"
 github "spotify", "1.0.1"
