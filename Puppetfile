@@ -72,7 +72,7 @@ github "macvim", "1.0.0"
 github "fish", "1.0.0"
 github "vim", "1.0.5"
 github "ctags", "1.0.0"
-github "osx", "2.0.0"
+github "osx", "2.0.0", :repo => "billyvg/puppet-osx"
 
 github "droplr", "1.0.1"
 github "spotify", "1.0.1"
