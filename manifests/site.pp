@@ -77,7 +77,6 @@ node default {
   include alfred
   include iterm2::dev
   include hipchat
-  include macvim
   include vim
   include ctags
 
