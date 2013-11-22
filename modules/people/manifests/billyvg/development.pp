@@ -3,10 +3,7 @@ class people::billyvg::development {
 
   repository { 'ohmyzsh':
     source => 'robbyrussell/oh-my-zsh',
-    path   => "${home}/.oh-my-zsh",
-    require => [
-      Package['zsh']
-    ]
+    path   => "${home}/.oh-my-zsh"
   }
 
   repository { 'scm breeze':
