@@ -78,5 +78,6 @@ dev "janus"
 
 github "droplr", "1.0.1"
 github "spotify", "1.0.1"
-github "onepassword", "1.0.2"
+#github "onepassword", "1.0.3", :repo => "billyvg/puppet-onepassword"
+dev "onepassword"
 github "vlc", "1.0.5"
