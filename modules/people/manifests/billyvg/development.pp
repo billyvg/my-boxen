@@ -8,7 +8,6 @@ class people::billyvg::development {
       Package['zsh']
     ]
   }
-git clone git://github.com/ndbroadbent/scm_breeze.git ~/.scm_breeze
 
   repository { 'scm breeze':
     source => 'ndbroadbent/scm_breeze',
