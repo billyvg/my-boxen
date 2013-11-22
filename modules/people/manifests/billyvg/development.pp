@@ -16,5 +16,18 @@ class people::billyvg::development {
       "HOME=${home}",
     ]
   }
-  
+
+  repository { 'dotfiles':
+    source  => 'billyvg/dotfiles',
+    path    => "${home}/.dotfiles",
+    require => [
+      Class["janus"],
+      Repository["ohmyzsh"],
+      Repository["scm breeze"]
+    ]
+  }
+  ~> exec { 'Link dotfiles':
+    command => "${home}/.dotfiles/post-commit"
+  }
+
 }
