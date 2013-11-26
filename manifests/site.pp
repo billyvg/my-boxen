@@ -12,6 +12,7 @@ Exec {
     "${boxen::config::home}/rbenv/bin",
     "${boxen::config::home}/rbenv/plugins/ruby-build/bin",
     "${boxen::config::home}/homebrew/bin",
+    '/usr/local/bin',
     '/usr/bin',
     '/bin',
     '/usr/sbin',
@@ -68,6 +69,9 @@ node default {
 
   # default ruby versions
   include ruby::2_0_0
+  class { 'ruby::global':
+    version => '2.0.0'
+  }
 
   include python
   include java
@@ -84,8 +88,28 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'cmake',
+      'tmux',
+      'phantomjs'
     ]:
+  }
+
+  class { 'nodejs::global':
+    version      => 'v0.10.21'
+  }
+
+  nodejs::module { 'bower':
+    node_version => 'v0.10'
+  }
+
+  nodejs::module { 'grunt-cli':
+    node_version => 'v0.10'
+  }
+
+  ruby::gem { 'compass':
+    gem  => 'compass',
+    ruby => '2.0.0'
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
