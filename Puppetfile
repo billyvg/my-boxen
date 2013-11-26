@@ -66,7 +66,7 @@ github "dropbox", "1.1.2"
 github "chrome", "1.1.2"
 github "hipchat", "1.0.8"
 github "iterm2", "1.0.4"
-github "alfred", "1.1.6"
+github "alfred", "1.1.7"
 github "macvim", "1.0.0"
 
 github "fish", "1.0.0"

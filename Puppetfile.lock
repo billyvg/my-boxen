@@ -1,7 +1,22 @@
 GITHUBTARBALL
+  remote: billyvg/puppet-janus
+  specs:
+    janus (1.0.0)
+
+GITHUBTARBALL
+  remote: billyvg/puppet-onepassword
+  specs:
+    onepassword (1.0.3)
+
+GITHUBTARBALL
+  remote: billyvg/puppet-osx
+  specs:
+    osx (2.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
-    alfred (1.1.6)
+    alfred (1.1.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
@@ -99,19 +114,9 @@ GITHUBTARBALL
     nodejs (3.3.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-onepassword
-  specs:
-    onepassword (1.0.2)
-
-GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-osx
-  specs:
-    osx (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -174,7 +179,7 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
-  alfred (= 1.1.6)
+  alfred (= 1.1.7)
   boxen (= 3.3.4)
   chrome (= 1.1.2)
   ctags (= 1.0.0)
@@ -191,13 +196,14 @@ DEPENDENCIES
   hub (= 1.0.3)
   inifile (= 1.0.0)
   iterm2 (= 1.0.4)
+  janus (= 1.0.0)
   java (= 1.1.0)
   macvim (= 1.0.0)
   nginx (= 1.4.2)
   nodejs (= 3.3.0)
-  onepassword (= 1.0.2)
+  onepassword (= 1.0.3)
   openssl (= 1.0.0)
-  osx (= 2.0.0)
+  osx (= 2.0.1)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
   python (= 1.1.1)
