@@ -30,10 +30,41 @@ class people::billyvg::development {
     command => "${home}/.dotfiles/post-commit"
   }
 
+  repository { 'vundle':
+    source  => 'gmarik/vundle',
+    path    => "${home}/.janus/bundle/vundle",
+    require => [
+      Package["vim"],
+      Package["cmake"]
+    ]
+  }
+  #~> exec { 'Install vim Bundles via Vundle':
+      #command => "${boxen::config::home}/homebrew/bin/vim +BundleInstall +qall"
+  #}
+  #~> exec { 'Compile YouCompleteMe':
+      #command => "${home}/.janus/bundle/YouCompleteMe/install.sh --clang-interpreter"
+  #}
+
   git::config::global { 'user.email':
     value => 'billyvg@gmail.com'
   }
   git::config::global { 'user.name':
     value => 'Billy Vong'
   }
+
+
+  repository {'tmux-OSX-pasteboard':
+    source => 'ChrisJohnsen/tmux-MacOSX-pasteboard',
+    path   => '/tmp/pasteboard'
+  }
+  -> exec { 'Build pasteboard':
+    command => 'make reattach-to-user-namespace',
+    cwd     => '/tmp/pasteboard'
+  }
+  ~> exec { 'Install pasteboard':
+    command => "cp reattach-to-user-namespace /usr/bin/",
+    cwd     => '/tmp/pasteboard',
+    user    => root
+  }
+
 }
