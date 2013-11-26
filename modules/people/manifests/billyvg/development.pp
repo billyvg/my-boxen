@@ -30,4 +30,10 @@ class people::billyvg::development {
     command => "${home}/.dotfiles/post-commit"
   }
 
+  git::config::global { 'user.email':
+    value => 'billyvg@gmail.com'
+  }
+  git::config::global { 'user.name':
+    value => 'Billy Vong'
+  }
 }
