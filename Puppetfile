@@ -45,7 +45,7 @@ github "homebrew",   "1.5.1"
 github "hub",        "1.0.3"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
-github "nodejs",     "3.3.0"
+github "nodejs",     "3.4.1"
 github "openssl",    "1.0.0"
 github "phantomjs",  "2.0.2"
 github "pkgconfig",  "1.0.0"
@@ -60,7 +60,7 @@ github "java", 	     "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "python", "1.1.1"
+github "python", "1.2.1"
 
 github "dropbox", "1.1.2"
 github "chrome", "1.1.2"
