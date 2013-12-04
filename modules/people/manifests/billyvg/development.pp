@@ -52,17 +52,16 @@ class people::billyvg::development {
     value => 'Billy Vong'
   }
 
-
-  repository {'tmux-OSX-pasteboard':
+  repository { 'tmux OSX Pasteboard':
     source => 'ChrisJohnsen/tmux-MacOSX-pasteboard',
     path   => '/tmp/pasteboard'
   }
-  -> exec { 'Build pasteboard':
+  ~> exec { 'Build pasteboard':
     command => 'make reattach-to-user-namespace',
     cwd     => '/tmp/pasteboard'
   }
   ~> exec { 'Install pasteboard':
-    command => "cp reattach-to-user-namespace /usr/bin/",
+    command => 'cp reattach-to-user-namespace /usr/bin/',
     cwd     => '/tmp/pasteboard',
     user    => root
   }
