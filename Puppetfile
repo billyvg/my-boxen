@@ -64,6 +64,7 @@ github "python", "1.2.1"
 
 github "dropbox", "1.1.2"
 github "chrome", "1.1.2"
+github "firefox", "1.1.5"
 github "hipchat", "1.0.8"
 github "iterm2", "1.0.4"
 github "alfred", "1.1.7"

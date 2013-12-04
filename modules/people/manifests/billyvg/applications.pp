@@ -1,4 +1,5 @@
 class people::billyvg::applications {
+  include firefox
   include macvim
   include vlc
   include onepassword
