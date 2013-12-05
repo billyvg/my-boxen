@@ -10,4 +10,10 @@ class people::billyvg::applications {
     source   => 'http://mmo.me/SmoothMouse1.0.9.zip',
     provider => 'compressed_pkg'
   }
+
+  package { 'evernote':
+    provider => 'appdmg_eula',
+    source   => 'http://cdn1.evernote.com/mac/release/Evernote_401298.dmg'
+  }
+
 }
