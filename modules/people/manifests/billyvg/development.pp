@@ -66,4 +66,7 @@ class people::billyvg::development {
     user    => root
   }
 
+  package { 'redis':
+  }
+
 }
