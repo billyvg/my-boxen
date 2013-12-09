@@ -5,6 +5,7 @@ class people::billyvg::applications {
   include onepassword
   include droplr
   include janus
+  include spotify
 
   package { 'Smoothmouse':
     source   => 'http://mmo.me/SmoothMouse1.0.9.zip',
