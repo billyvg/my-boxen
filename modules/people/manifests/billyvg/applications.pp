@@ -6,6 +6,7 @@ class people::billyvg::applications {
   include droplr
   include janus
   include spotify
+  include divvy
 
   package { 'Smoothmouse':
     source   => 'http://mmo.me/SmoothMouse1.0.9.zip',
