@@ -3,7 +3,6 @@ class people::billyvg::applications {
   include macvim
   include vlc
   include onepassword
-  include droplr
   include janus
   include spotify
   include divvy
