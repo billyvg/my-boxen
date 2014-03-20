@@ -97,7 +97,7 @@ node default {
   }
 
   class { 'nodejs::global':
-    version      => 'v0.10.21'
+    version      => 'v0.10'
   }
 
   nodejs::module { 'bower':
