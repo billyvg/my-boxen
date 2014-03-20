@@ -111,7 +111,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.5.0)
+    nodejs (3.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
@@ -212,7 +212,7 @@ DEPENDENCIES
   macvim (= 1.0.0)
   module-data (= 0.0.1)
   nginx (= 1.4.3)
-  nodejs (= 3.5.0)
+  nodejs (= 3.6.0)
   onepassword (= 1.1.0)
   openssl (= 1.0.0)
   osx (= 2.0.1)
