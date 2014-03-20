@@ -4,6 +4,11 @@ GITHUBTARBALL
     janus (1.0.0)
 
 GITHUBTARBALL
+  remote: billyvg/puppet-nodejs
+  specs:
+    nodejs (3.7.0)
+
+GITHUBTARBALL
   remote: billyvg/puppet-osx
   specs:
     osx (2.0.1)
@@ -109,11 +114,6 @@ GITHUBTARBALL
     nginx (1.4.3)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (3.6.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
     onepassword (1.1.0)
@@ -212,7 +212,7 @@ DEPENDENCIES
   macvim (= 1.0.0)
   module-data (= 0.0.1)
   nginx (= 1.4.3)
-  nodejs (= 3.6.0)
+  nodejs (= 3.7.0)
   onepassword (= 1.1.0)
   openssl (= 1.0.0)
   osx (= 2.0.1)
