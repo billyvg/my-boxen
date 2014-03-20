@@ -90,7 +90,11 @@ node default {
   }
 
   class { 'nodejs::global':
-    version      => 'v0.10'
+    version => 'v0.10'
+  }
+
+  class { 'ruby::global':
+    version => '2.0.0'
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
