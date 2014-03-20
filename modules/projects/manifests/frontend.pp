@@ -23,7 +23,8 @@ class projects::frontend {
     }
 
     ruby::gem { 'compass':
-        gem  => 'compass'
+        gem  => 'compass',
+        ruby => '2.0.0'
     }
 
 }
