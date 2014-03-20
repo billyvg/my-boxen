@@ -1,6 +1,8 @@
 class people::billyvg::development {
   $home = "/Users/${::boxen_user}"
 
+  include ctags
+
   repository { 'ohmyzsh':
     source => 'robbyrussell/oh-my-zsh',
     path   => "${home}/.oh-my-zsh"

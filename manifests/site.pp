@@ -65,14 +65,10 @@ node default {
   }
 
   # node versions
-  include nodejs::v0_6
-  include nodejs::v0_8
   include nodejs::v0_10
 
   # default ruby versions
-  ruby::version { '1.9.3': }
   ruby::version { '2.0.0': }
-  ruby::version { '2.1.0': }
 
   include python
   include java
@@ -82,7 +78,6 @@ node default {
   include alfred
   include iterm2::dev
   include hipchat
-  include ctags
 
   # common, useful packages
   package {
@@ -90,27 +85,12 @@ node default {
       'ack',
       'findutils',
       'gnu-tar',
-      'cmake',
-      'tmux',
-      'phantomjs'
+      'cmake'
     ]:
   }
 
   class { 'nodejs::global':
     version      => 'v0.10'
-  }
-
-  nodejs::module { 'bower':
-    node_version => 'v0.10'
-  }
-
-  nodejs::module { 'grunt-cli':
-    node_version => 'v0.10'
-  }
-
-  ruby::gem { 'compass':
-    gem  => 'compass',
-    ruby => '2.0.0'
   }
 
   file { "${boxen::config::srcdir}/our-boxen":

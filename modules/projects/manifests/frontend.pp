@@ -1,9 +1,4 @@
-class projects::development {
-    include python
-    include java
-
-    include ctags
-
+class projects::frontend {
     package {
         [
             'tmux',
