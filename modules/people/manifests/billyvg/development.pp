@@ -2,6 +2,7 @@ class people::billyvg::development {
   $home = "/Users/${::boxen_user}"
 
   include ctags
+  include virtualbox
 
   repository { 'ohmyzsh':
     source => 'robbyrussell/oh-my-zsh',
