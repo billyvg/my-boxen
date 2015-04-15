@@ -7,19 +7,19 @@ class projects::frontend {
     }
 
     nodejs::module { 'bower':
-        node_version => 'v0.10'
+        node_version => 'v0.12'
     }
 
     nodejs::module { 'grunt-cli':
-        node_version => 'v0.10'
+        node_version => 'v0.12'
     }
 
     nodejs::module { 'karma':
-        node_version => 'v0.10'
+        node_version => 'v0.12'
     }
 
-    nodejs::module { 'jshint':
-        node_version => 'v0.10'
+    nodejs::module { 'eslint':
+        node_version => 'v0.12'
     }
 
     ruby::gem { 'compass':
