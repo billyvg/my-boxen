@@ -11,7 +11,7 @@ Exec {
     "${boxen::config::home}/rbenv/shims",
     "${boxen::config::home}/rbenv/bin",
     "${boxen::config::home}/rbenv/plugins/ruby-build/bin",
-    "${boxen::config::home}/homebrew/bin",
+    "${boxen::config::homebrewdir}/bin",
     '/usr/local/bin',
     '/usr/bin',
     '/bin',
@@ -64,12 +64,15 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
+  #include nodejs::v0_12
   # node versions
-  include nodejs::v0_12
+  nodejs::version { 'v0.10': }
+  nodejs::version { 'v0.12': }
 
   # default ruby versions
   ruby::version { '2.1.0': }
   ruby::version { '2.1.1': }
+  ruby::version { '2.1.2': }
 
   include python
   include java
