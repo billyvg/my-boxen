@@ -64,10 +64,8 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  #include nodejs::v0_12
   # node versions
-  nodejs::version { 'v0.10': }
-  nodejs::version { 'v0.12': }
+  nodejs::version { 'v0.12.2': }
 
   # default ruby versions
   ruby::version { '2.1.0': }
@@ -94,11 +92,11 @@ node default {
   }
 
   class { 'nodejs::global':
-    version => 'v0.12'
+    version => 'v0.12.2'
   }
 
   class { 'ruby::global':
-    version => '2.0.0'
+    version => '2.1.2'
   }
 
   file { "${boxen::config::srcdir}/our-boxen":

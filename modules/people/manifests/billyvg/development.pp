@@ -72,9 +72,9 @@ class people::billyvg::development {
   package { 'redis':
   }
 
-  ruby::gem { 'knife-solo':
+  ruby_gem { 'knife-solo':
     gem  => 'knife-solo',
-    ruby => '2.0.0'
+    ruby_version => '2.1.2'
   }
 
 }
